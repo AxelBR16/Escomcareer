@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    
+    <title>Escomcareer</title>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="./assets/logo.png" alt="Logo">  
+    </div>
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">Menú</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="carreras.html">Carreras</a></li>
+        </ul>
+    </nav>
+    <div class="btn-wrapper">
+        <a class="btn" href="login.html"><button>Iniciar sesión</button></a>
+    </div>
+</header>
+<br>
+<br>
+
+
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="#" method="POST">
+                <h1>Crea tu cuenta</h1>
+                <input type="text" name="firstName" placeholder="Nombres" required>
+                <input type="text" name="lastName" placeholder="Apellidos" required>
+                <input type="text" name="escuela" placeholder="Escuela de Procedencia" required>
+                <input type="email" name="correo" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button>Crear tu cuenta</button>
+            </form>
+        </div>
+
+       
+
+       
+
+
+        <div class="form-container sign-in">
+            <form action="" method="POST" id="loginform">
+                 <img src="./assets/logoN.png" alt="Logo escomcareer">
+                 <br>
+                 <br>
+                <h1>Inicia Sesión</h1>
+                <input id="email" name="email" type="email" placeholder="Email">
+                <input id="password" name="password" type="password" placeholder="Password">
+                <a href="#">¿Olvidaste la contraseña?</a>
+                <a class="btn" href="./resultados.html">Iniciar sesión</a>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>¡Bienvenido de nuevo!</h1>
+                    <p>Ingresa tus datos personales para usar todas las funciones del sitio</p>
+                    <button class="hidden" id="login">Iniciar sesión</button>
+                </div>
+
+
+
+                <div class="toggle-panel toggle-right">
+                    <h1>¡Bienvenido!</h1>
+                    <p>Únete a nuestra comunidad y accede a contenido exclusivo para aspirantes y egresados. ¡No pierdas la oportunidad!</p>
+                   <div class="items">
+                    <a class="btn" href="loginEgresado.html"> <button class="hidden" id="" >
+                        <img src="./assets/images/Egresado.png" alt="Egresado" />
+                        Egresado/
+                        Estudiante</button></a>
+                        <button class="hidden" id="register">
+                            <img src="./assets/images/Aspirante.png" alt="Aspirante" />
+                            Aspirante</button>
+                    </div>
+                    
+                </div>
+            </div>  
+        </div>
+        
+    </div>
+
+    <script src="./assets/js/login.js"></script>
+   
+</body>
+</html>
