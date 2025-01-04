@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
     if (document.getElementById('registerForm')) {
         document.getElementById('registerForm').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -26,8 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function toggleMenu() {
-        const navLinks = document.getElementById('nav-links');
-        navLinks.classList.toggle('show');
-    }
+  
 });
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
+}
