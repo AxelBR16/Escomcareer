@@ -43,3 +43,7 @@ nextButton.addEventListener("click", () => {
 
 // Inicializa la primera pregunta y el progreso
 updateQuestion();
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
+}
