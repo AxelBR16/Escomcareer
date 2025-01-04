@@ -21,8 +21,9 @@ prevDom.onclick = function(){
 }
 let runTimeOut;
 let runNextAuto = setTimeout(() => {
-    next.click();
-}, timeAutoNext)
+    showSlider('next');
+}, timeAutoNext);
+
 function showSlider(type){
     let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
     let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
@@ -46,4 +47,9 @@ function showSlider(type){
     runNextAuto = setTimeout(() => {
         next.click();
     }, timeAutoNext)
+}
+
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
 }
