@@ -1,0 +1,13 @@
+{
+  "name": "credencialipn",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "jsdom": "^25.0.1"
+  },
+  "keywords": [],
+  "author": "ABR",
+  "license": "ISC",
+  "description": ""
+}
