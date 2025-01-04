@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/preguntas.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+
+    <title>Inventario de intereses ocupacionales</title>
+   
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="Logo dksld">
+            
+        </div>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">Menú</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="./carreras.html">Carreras</a></li>
+                <li><a href="./resultados.html">Pruebas</a</li>
+                <li><a href="">Valora</a></li>
+            </ul>
+        </nav>
+        <div class="btn-wrapper">
+            <a class="btn" href="LoginPrincipal.html"><button>Iniciar sesión</button></a>
+           
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="question">
+            <h3 id="question-title">Inventario de intereses ocupacionales</h3>
+            <p id="question-text">Ser comentarista de temas diversos en un programa de televisión.</p>
+            <p>Elige una de las Siguientes respuestas:</p>
+            <br>
+            <div class="options">
+                <button>1. Me desagrada totalmente.</button>
+                <button>2. Me desagrada.</button>
+                <button>3. Me es indiferente.</button>
+                <button>4. Me gusta.</button>
+                <button>5. Me gusta mucho.</button>
+            </div>
+            <div class="navigation">
+                <button id="prev">Anterior</button>
+                <button id="next">Siguiente</button>
+            </div>
+            <p>Progreso</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+
+        </div>
+        <div class="image">
+            <img id="question-image" src="/assets/images/q1.webp" alt="Imagen relacionada">
+
+        </div>
+        
+    </div>
+ 
+   
+    
+
+ <script src="./assets/js/Preguntas.js"></script>
+ <script src="/assets/js/login.js"></script>
+
+</body>
+</html>
