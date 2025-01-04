@@ -78,6 +78,21 @@ main {
     
 }
 
+/* fondo de valora*/
+.hero-section4 {
+    position: relative; /* Habilita el posicionamiento de elementos hijos */
+    width: 100%; /* Asegura que ocupe todo el ancho de la página */
+    height: 100%; /* Asegura que ocupe toda la altura del contenedor */
+    min-height: 100px; /* Establece una altura mínima */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/valora.webp'); /* Agrega la imagen como fondo */
+    background-size:cover; /* La imagen cubre todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin-top: 60px;
+    border-radius: 10px;
+    
+}
+
 
 /* Main Section */
 .test-section {
@@ -190,6 +205,24 @@ main {
     
 }
 
+.card2 {
+    position: relative; /* Permite posicionar elementos hijos de manera específica */
+    background-color: #CFE2FF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    color: #000000;
+    background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+    background-position: center; /* Centra la imagen en la tarjeta */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 250px; /* Altura mínima aumentada */
+    width: 80%;
+    
+    
+}
+
 
 
 .opt1 {
@@ -275,7 +308,7 @@ main {
 
 .results-btn {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     margin: 0 auto;
 }
 .results-btn:hover {
@@ -359,6 +392,12 @@ main {
     .btn-option {
         width: 100%; /* Los botones ocupan todo el ancho disponible */
         margin: 5px 0; /* Espaciado vertical entre los botones */
+        text-align: center; /* Asegura que el texto esté centrado */
+    }
+    .results-btn {
+        width: 100%;
+        max-width: 150px;
+        margin: 0 auto;
         text-align: center; /* Asegura que el texto esté centrado */
     }
 }

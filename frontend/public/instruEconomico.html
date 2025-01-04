@@ -23,7 +23,7 @@
         <ul class="nav-links" id="nav-links">
             <li><a href="carreras.html">Carreras</a></li>
             <li><a href="Cuestionarios.html">Pruebas</a</li>
-            <li><a href="">Valora</a></li>
+            <li><a href="valora.html">Valora</a></li>
         </ul>
     </nav>
     <div class="btn-wrapper">
@@ -47,21 +47,26 @@
         <p>Responde de manera adecuada</p>
         <div class="test-cards">
             <div class="card">
-                <h3>CUESTIONARIO</h3>
-                <p><strong>¿Tienes los recursos para cubrir el donativo de inscripción sugerido de $X MXN al inicio de cada semestre?</strong></p>
-                <button class="btn-option">Sí</button>
-            <button class="btn-option">No</button>
-            <button class="btn-option">No estoy seguro(a)</button>
-                
-            <p>¿Cuánto dinero tienes presupuestado al mes para materiales escolares (libros, software, etc.) para la carrera?</p>
-            <input type="text" class="input-field" placeholder="Escribe aquí tu respuesta">
-            
-            <p>¿Cuánto dinero tienes presupuestado al mes para cursos adicionales (cursos online, talleres, certificaciones, etc.) relacionados con la carrera?</p>
-            <input type="text" class="input-field" placeholder="Escribe aquí tu respuesta">
-        </div>
+                <form action="submit_feedback.html" method="POST" class="feedback-form">
+                    <h3>CUESTIONARIO</h3>
+                    <p>¿Tienes los recursos para cubrir el donativo de inscripción sugerido de $X MXN al inicio de cada semestre?</p>
+                    <button class="btn-option" type="button">Sí</button>
+                    <button class="btn-option" type="button">No</button>
+                    <button class="btn-option" type="button">No estoy seguro(a)</button>
+                    
+                    <p>¿Cuánto dinero tienes presupuestado al mes para materiales escolares (libros, software, etc.) para la carrera?</p>
+                    <input type="text" class="input-field" name="materiales" placeholder="Escribe aquí tu respuesta">
+                    
+                    <p>¿Cuánto dinero tienes presupuestado al mes para cursos adicionales (cursos online, talleres, certificaciones, etc.) relacionados con la carrera?</p>
+                    <input type="text" class="input-field" name="cursos" placeholder="Escribe aquí tu respuesta">
+                    <br>
+                    <br>
+                    <button type="submit" class="btn results-btn">Enviar</button>
+                </form>
+            </div>
         </div>
         
-        <a href="preguntas.html"><button class="btn results-btn">Enviar</button></a>
+        
         <br>
         <br>
     </section>
