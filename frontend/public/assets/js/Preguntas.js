@@ -1,6 +1,6 @@
 // Lógica de preguntas actualizada
 const questions = [
-    { text: "Resolver operaciones matemáticas.", image: "./assets/images/universitarias/niversitarias/1.webp" },
+    { text: "Resolver operaciones matemáticas.", image: "./assets/images/universitarias/1.webp" },
     { text: "Ser asistente por temporadas de un investigador que trabaje en programas de investigación aplicada a la genética en seres vivos.", image: "./assets/images/universitarias/2.webp" },
     { text: "Conocer los compuestos químicos de las sustancias.", image: "./assets/images/universitarias/3.webp" },
     { text: "Hacer inventarios de lo que hay en un almacén.", image: "./assets/images/universitarias/4.webp" },
@@ -107,7 +107,13 @@ nextButton.addEventListener("click", () => {
             updateQuestion();
         }
     } else {
-        alert("Por favor, selecciona una respuesta antes de continuar.");
+        Swal.fire({
+    title: 'Atención',
+    text: 'Por favor, selecciona una respuesta antes de continuar.',
+    icon: 'warning',
+    confirmButtonText: 'Entendido',
+    confirmButtonColor: '#007bff'
+});
     }
 });
 

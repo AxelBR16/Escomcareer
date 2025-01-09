@@ -136,6 +136,45 @@ main {
     min-height: 250px; /* Altura mínima aumentada */
 }
 
+
+.cardF {
+    background-color: #DBCC49;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    color: #fff;
+    background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+    background-position: center; /* Centra la imagen en la tarjeta */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 100px; /* Altura mínima aumentada */
+    text-align: center;
+}
+.cardF2 {
+    background-color: #66BB6A;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    color: #fff;
+    background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+    background-position: center; /* Centra la imagen en la tarjeta */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 100px; /* Altura mínima aumentada */
+    text-align: center;
+}
+
+
+.cardF h1, .cardF2 h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+
+
 .card h3, .card p {
     background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para resaltar texto */
     padding: 10px;
@@ -160,7 +199,7 @@ main {
 
 
 .cardd {
-    position: ;
+    position: relative;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
